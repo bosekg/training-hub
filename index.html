@@ -99,7 +99,7 @@
 
   .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
 
-  .day-section { padding: 80px 0 40px; border-bottom: 1px solid var(--border); }
+  .day-section { padding: 80px 0 40px; border-bottom: 1px solid var(--border); scroll-margin-top: 56px; }
   .day-section:last-of-type { border-bottom: none; }
 
   .day-header {
@@ -607,7 +607,7 @@
         });
       }
     });
-  }, { threshold: 0.3, rootMargin: '-60px 0px -40% 0px' });
+  }, { threshold: 0.15, rootMargin: '-56px 0px -35% 0px' });
   sections.forEach(s => observer.observe(s));
 </script>
 </body>
